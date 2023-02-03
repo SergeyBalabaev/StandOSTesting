@@ -11,6 +11,7 @@ SOURCES = 	./obj/ButtonTest.o \
 			./obj/RangefinderHcsr04Test.o \
 			./obj/StepmotorTest.o \
 			./obj/DisplayTest.o \
+			./obj/RfidreaderTest.o \
 			./obj/Test.o
 
 all:
@@ -27,4 +28,5 @@ all:
 	gcc -c ./src/RangefinderHcsr04Test.c -o ./obj/RangefinderHcsr04Test.o
 	gcc -c ./src/StepmotorTest.c -o ./obj/StepmotorTest.o
 	gcc -c ./src/DisplayTest.c -o ./obj/DisplayTest.o
+	gcc -c ./src/RfidreaderTest.c -o ./obj/RfidreaderTest.o
 	gcc $(SOURCES) -o Test -lwiringPi -lpigpio -lm -lbcm2835 -lgd -lfreetype

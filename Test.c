@@ -10,9 +10,13 @@
 #include "./src/RangefinderGp2yTest.h"
 #include "./src/RangefinderHcsr04Test.h"
 #include "./src/StepmotorTest.h"
+#include "./src/DisplayTest.h"
+#include "./src/RfidreaderTest.h"
 
 int main()
 {
+    //RfidreaderTest();
+    //DisplayTest();
     //StepmotorTest();
     //RangefinderHcsr04Test();
     //RangefinderGp2yTest();
@@ -21,7 +25,7 @@ int main()
     //MicrophoneTest();
     //ButtonTest();
     //LightDetectTest();
-   // GyroTest();
-   // ColorSenseTest();
-   // LedTest();
+    //GyroTest();
+    //ColorSenseTest();
+    //LedTest();
 }
