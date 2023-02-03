@@ -10,11 +10,9 @@
 #include "./src/RangefinderGp2yTest.h"
 #include "./src/RangefinderHcsr04Test.h"
 #include "./src/StepmotorTest.h"
-#include "./src/DisplayTest.h"
 
 int main()
 {
-    DisplayTest();
     //StepmotorTest();
     //RangefinderHcsr04Test();
     //RangefinderGp2yTest();
