@@ -10,11 +10,11 @@ SOURCES = 	./obj/ButtonTest.o \
 			./obj/RangefinderGp2yTest.o \
 			./obj/RangefinderHcsr04Test.o \
 			./obj/StepmotorTest.o \
-			./obj/DisplayTest.o \
 			./obj/RfidreaderTest.o \
+			./obj/DisplayTest.o \
 			./obj/Test.o
 
-all:
+all: clean
 	gcc -c Test.c -o ./obj/Test.o
 	gcc -c ./src/LedTest.c -o ./obj/LedTest.o
 	gcc -c ./src/ButtonTest.c -o ./obj/ButtonTest.o
@@ -29,4 +29,8 @@ all:
 	gcc -c ./src/StepmotorTest.c -o ./obj/StepmotorTest.o
 	gcc -c ./src/DisplayTest.c -o ./obj/DisplayTest.o
 	gcc -c ./src/RfidreaderTest.c -o ./obj/RfidreaderTest.o
-	gcc $(SOURCES) -o Test -lwiringPi -lpigpio -lm -lbcm2835 -lgd -lfreetype
+	gcc $(SOURCES) -o TestPerifery.out -lwiringPi -lpigpio -lm -lbcm2835 -lgd -lfreetype
+
+clean:
+	rm -rf ./obj/*
+	rm -rf TestPerifery.out
